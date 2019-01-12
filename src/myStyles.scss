@@ -1,0 +1,90 @@
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#routerUl {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#homeText {
+  text-align: center;
+  margin-top: 5em;
+  z-index: 2;
+}
+
+#pokeImgDiv {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pokeballImg {
+  width: 12em;
+  height: 12em;
+}
+
+.routerLi {
+  margin: 0.5em;
+}
+
+h4 {
+  text-align: center;
+}
+
+#inputDiv { 
+  text-align: center;
+}
+
+input {
+  width: 16em;
+  height: 1.5em;
+}
+
+#pokemonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+
+.pokemonList {
+  border: 2px solid black;
+  text-align: center;
+  margin: 0.1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul:hover {
+  cursor: pointer;
+}
+
+button {
+  margin-bottom: 0.5em;
+  height: 1.8em;
+  border: 0.15em solid black;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: black;
+  transform: translateY(.3em);
+}
+
+button:focus { 
+  outline: 0;
+}
