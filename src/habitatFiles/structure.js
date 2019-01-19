@@ -1,5 +1,6 @@
+// eslint-disable
 import React from 'react';
-import regeneratorRuntime, { async } from 'regenerator-runtime'; // eslint-disable-line 
+import regeneratorRuntime, { async } from 'regenerator-runtime'; // eslint-disable-line
 
 function Hoc(PassedComponent, habitatName) {
   return class DataComponent extends React.Component {
@@ -59,7 +60,7 @@ function Hoc(PassedComponent, habitatName) {
         dataArr: input,
         display:
           input === null ? null : (
-            <ul id="pokemonContainer">
+            <ul id="pokemonContainer" data-testid="pokemonList">
               {input.map(item => (
                 <li className="pokemonList" key={item.name}>
                   <img
@@ -132,7 +133,7 @@ function Hoc(PassedComponent, habitatName) {
           <div id="inputDiv">
             <input type="text" placeholder="Search for a Pokémon..." onChange={this.inputFunc} />
           </div>
-          <PassedComponent {...this.props} display={info.display} />
+          <PassedComponent display={info.display} />
         </div>
       );
     }
