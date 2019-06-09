@@ -1,5 +1,5 @@
 {
-  "name": "pokemonHabitats",
+  "name": "pokemon_habitats",
   "version": "1.0.0",
   "description": "A react boiler plate",
   "main": "src/index.js",
